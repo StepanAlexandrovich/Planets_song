@@ -16,7 +16,7 @@ public class AnimationFrame extends JFrame{
 
         this.add(label);
 
-        this.setBounds(0,0,210,230);
+        this.setBounds(0,0,render.getWidth() + 30,render.getHeight() + 30);
 //        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
@@ -27,5 +27,12 @@ public class AnimationFrame extends JFrame{
 
         ////////////////
         repaint();
+    }
+
+    public void setAutoMultiplicationX(int bigDistance){
+        render.setAutoMultiplicationX(bigDistance);
+    }
+    public void setAutoMultiplicationY(int maxSpeed){
+        render.setAutoMultiplicationY(maxSpeed);
     }
 }
