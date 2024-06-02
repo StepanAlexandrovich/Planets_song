@@ -1,4 +1,4 @@
-package org.example;
+package org.example.core;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,10 +9,11 @@ public class Numbers {
 
     private int value;
 
-    public void createPlanets(int bigDistance){
+    public void createPlanets(int bigDistance,int smoothness){
+        planets = new ArrayList<>();
         List<Integer> dividers = dividers(bigDistance);
         for (Integer divider : dividers) {
-            planets.add(new Planet(divider,0,bigDistance - 1));
+            planets.add(new Planet(divider,0,bigDistance*smoothness - 1));
         }
     }
     private List<Integer> dividers(int value){

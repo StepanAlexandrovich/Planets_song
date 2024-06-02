@@ -1,4 +1,4 @@
-package org.example;
+package org.example.audibility;
 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;

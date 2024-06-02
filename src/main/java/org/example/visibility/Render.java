@@ -1,4 +1,7 @@
-package org.example;
+package org.example.visibility;
+
+import org.example.core.Numbers;
+import org.example.core.Planet;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

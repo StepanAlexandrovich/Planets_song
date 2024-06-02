@@ -1,4 +1,4 @@
-package org.example;
+package org.example.core;
 
 public class Planet {
     private final int speed,start,end;
